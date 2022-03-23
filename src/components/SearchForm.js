@@ -1,13 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-export const useMeals = () => {
-  const [data, setData] = useState(1)
-  const updateData = (val) => {
-    setData(val)
-  }
-
-  return [data, updateData]
-}
 export const SearchForm = ({ handleSubmit, setSearchPhrase, searchPhrase }) => {
   return (
       <form className="flex" onSubmit={handleSubmit}>
